@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 50% -40%;
+    background-size: 100vw;
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.continer{
+    width: 23vw;
+    height: 80vh;
+    border-radius: 25px;
+    background-color: #fff;
+    
+}
+.continer__img{
+    width: 23vw;
+    height: 25vh;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.continer__Title{
+    text-align: center;
+    padding: 30px 0 20px 0;
+    color: hsl(223, 47%, 23%);
+}
+
+.continer__destription{
+    text-align: center;
+    margin: 0 45px;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+
+}
+.continer__box{
+    position: relative;
+    height: 10vh;
+    width: 80%;
+    left: 10%;
+    margin: 30px 0;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    
+    
+}
+.continer__box__offer{
+    position:absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 16px;
+}
+
+.continer__box__price{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    font-size: 16px;
+}
+.continer__img2{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+.continer__box__price{
+    position: absolute;
+}
+.change{
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 8%;
+    width: 85%;
+    margin: 50px 0;
+    
+    
+}
+
+.btn1{
+    margin: 0 0 20px 0;
+    padding: 20px 0;
+    font-size: 18px;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow:  5px 10px hsl(280, 75%, 95%);
+}
+.btn2{
+    
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+
+}
+
