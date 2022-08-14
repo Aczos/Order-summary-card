@@ -1,494 +1,105 @@
  *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: 50% -40%;
-    background-size: 100vw;
-    background-color: hsl(225, 100%, 94%);
-    height: 100vh;
-    font-family: 'Red Hat Display', sans-serif;
-
-}
-
-.continer{
-    width: 23vw;
-    height: 80vh;
-    border-radius: 25px;
-    background-color: #fff;
-    
-}
-.continer__img{
-    width: 23vw;
-    height: 25vh;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.continer__Title{
-    text-align: center;
-    padding: 30px 0 20px 0;
-    color: hsl(223, 47%, 23%);
-}
-
-.continer__destription{
-    text-align: center;
-    margin: 0 45px;
-    font-size: 16px;
-    color: hsl(224, 23%, 55%);
-
-}
-.continer__box{
-    position: relative;
-    height: 10vh;
-    width: 80%;
-    left: 10%;
-    margin: 30px 0;
-    background-color: hsl(225, 100%, 98%);
-    border-radius: 20px;
-    
-    
-}
-.continer__box__offer{
-    position:absolute;
-    top: 25%;
-    left: 25%;
-    font-size: 16px;
-}
-
-.continer__box__price{
-    position: absolute;
-    top: 45%;
-    left: 25%;
-    font-size: 16px;
-}
-.continer__img2{
-    position: absolute;
-    top: 25px;
-    left: 10px;
-}
-.continer__box__price{
-    position: absolute;
-}
-.change{
-    position: absolute;
-    top: 35%;
-    left: 80%;
-    color: hsl(245, 75%, 52%);
-    font-weight: bold;
-}
-
-
-
-.buttons{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 8%;
-    width: 85%;
-    margin: 50px 0;
-    
-    
-}
-
-.btn1{
-    margin: 0 0 20px 0;
-    padding: 20px 0;
-    font-size: 18px;
-    background-color: hsl(245, 75%, 52%);
-    border: none;
-    border-radius: 25px;
-    font-weight: bold;
-    color: #fff;
-    box-shadow:  5px 10px hsl(280, 75%, 95%);
-}
-.btn2{
-    
-    margin: 0 0 15px 0;
-    font-size: 20px;
-    padding: 15px;
-    border: none;
-    background-color: white;
-    color: hsl(224, 23%, 55%);
-    font-weight: bold;
-
-}  */
-
-
-@media (min-width:375px) { 
 
     body{
         display: flex;
         justify-content: center;
         text-align: center;
-        height: 100vh;
-        width: 25rem;
+        width: 90%;
         background-image: url(/pattern-background-desktop.svg);
         background-color: hsl(225, 100%, 94%);
         background-repeat: no-repeat;
         background-position: 50% -40%;
+        background-size: 100%;
         font-family: 'Red Hat Display', sans-serif;
     
     } 
-    .continer{ 
+    .container{ 
         margin: 30px 0;
-        height: 100vh;
-        width: 90vw;
         background-color: #fff;
         border-radius: 25px;
     }
-    .continer__img{
-        width: 21.1rem;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+    .container__img{
+        width: 100%;
+        border-radius: 25px 25px  0 0;
     }
-    .continer__Title{   
+    .container__Title{   
         text-align: center;
-       padding: 20px;
        color: hsl(223, 47%, 23%);
+       margin: 1rem 0 ;
     }
-    .continer__destription{
+    .container__destription{
         text-align: center;
-        margin: 0 45px;
-        font-size: 16px;
+        width: 60%;
         color: hsl(224, 23%, 55%);
+        margin-bottom:2rem;
     }
-    .continer__box{  
-        position: relative;
-        height: 15vh;
+    .container__box{  
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         width: 90%;
-        left: 5%;
-        margin: 30px 0;
+        padding: 2rem 0;
+        margin: 1rem auto;
         background-color: hsl(225, 100%, 98%);
         border-radius: 20px;
     }
-    .continer__box__offer{
-        position:absolute;
-        top: 30%;
-        left: 25%;
+    .container__box__offer__first{
+        display: flex;
+        flex-direction: column;
+    }
+    .container__box__offer__second{
         font-size: 16px;
     }
-    .continer__box__price{
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        font-size: 16px;
-    }
-    .continer__box__img2{
-        position: absolute;
-        top: 25px;
-        left: 10px;
-    }
-    .continer__box__price{
-        position: absolute;
+    
+    .container__box__price{
     }
     .change{
-        position: absolute;
-        top: 35%;
-        left: 75%;
         color: hsl(245, 75%, 52%);
         font-weight: bold;
     }
     .buttons{
         display: flex;
         flex-direction: column;
-        position: relative;
-        left: 8%;
-        width: 85%;
-        margin: 50px 0;
-    }
-    .btn1{
-        margin: 0 0 20px 0;
-        padding: 20px 0;
+        align-items: center;
+        justify-content: center; 
+    margin-bottom: 2rem;}
+    
+    .btn__first{
+        margin: 1rem 0;
+        padding: 1rem 3rem;
         font-size: 18px;
         background-color: hsl(245, 75%, 52%);
         border: none;
-        border-radius: 25px;
+        border-radius: 10px;
         font-weight: bold;
         color: #fff;
         box-shadow:  5px 10px hsl(280, 75%, 95%);
+        cursor: pointer;
     }
-    .btn2{
-        margin: 0 0 15px 0;
+
+    .btn__second{
         font-size: 20px;
-        padding: 15px;
+        padding: 1rem 3rem;
+        margin: 1rem 0;
         border: none;
         background-color: white;
         color: hsl(224, 23%, 55%);
         font-weight: bold;
+        cursor: pointer;
+
      }
 
- }
 
-
-
- @media (min-width: 576px) {
-    body{
-        height: 100vh;
-        width: 35rem;
-    } 
-    .continer{ 
-        margin: 30px 0;
-        height: 100vh;
-        width: 90vw;
-    }
-    .continer__img{
-        width: 32.4rem;
-    }
-    .continer__Title{     
-    }
-    .continer__destription{
-        text-align: center;
-        margin: 0 60px;
-        font-size: 16px;
-        color: hsl(224, 23%, 55%);
-    } 
-    .continer__box__price{
-    }
-    .continer__box__img2{
-        top: 40px;
-        left: 30px;
+ @media(min-width:600px){
+    .container{
+        width: 500px;
     }
  }
 
 
-
-
- @media (min-width: 768px) {
-    body{
-        height: 100vh;
-        width: 50rem;
-    } 
-    .continer{ 
-        margin: 30px 0;
-        height: 100vh;
-        width: 50vw;
-    }
-    .continer__img{
-        width: 27.4rem;
-    }
-    .continer__destription{
-        text-align: center;
-        margin: 0 60px;
-        font-size: 16px;
-        color: hsl(224, 23%, 55%);
-    }
-    
-    .continer__img2{
-        top: 35px;
-        left: 30px;
-    }
-   
- }
- 
-
-
-
- @media (min-width: 992px) {
-    body{
-        height: 100vh;
-        width: 60rem;
-    } 
-    .continer{ 
-        margin: 30px 0;
-        height: 80vh;
-        width: 50vw;
-    }
-
-    .continer__img{
-        width: 31rem;
-    }
-    .continer__Title{ 
-           font-size: 40px;
-    }
-    .continer__destription{
-        font-size: 25px;
-    }
-    .continer__destription{
-        text-align: center;
-        margin: 0 60px;
-        font-size: 16px;
-        color: hsl(224, 23%, 55%);
-    }
-
-    .continer__box{  
-        position: relative;
-        height: 10vh;
-        width: 90%;
-        left: 5%;
-        margin: 30px 0;
-        background-color: hsl(225, 100%, 98%);
-        border-radius: 20px;
-    }
-    .continer__box__price{
-        font-size: 18px;
-    }
-    .continer__box__offer{
-        font-size: 18px;
-    }
-    .change{
-        font-size: 20px;
-    }
-    .continer__box__img2{
-        top: 25px;
-        left: 30px;
-
-    }
- }
- 
-
-
-
- @media (min-width: 1200px) {
-    body{
-        height: 100vh;
-        width: 70rem;
-    } 
-    .continer{ 
-        margin: 100px 0 0 0;
-        height: 70vh;
-        width: 50vw;
-    }
-    .continer__img{
-        width: 37.5rem;
-    }
-    .continer__Title{ 
-           font-size: 40px;
-    }
-    .continer__destription{
-        padding: 0 50px;
-        font-size: 10px;
-    }
-    .continer__destription{
-        margin: 0 60px;
-        font-size: 20px;
-    }
-
-    .continer__box{  
-        position: relative;
-        height: 9vh;
-        width: 90%;
-        left: 5%;
-        margin: 30px 0;
-    }
-    .continer__box__price{
-        font-size: 22px;
-    }
-    .continer__box__offer{
-        font-size: 22px;
-    }
-    .change{
-        font-size: 20px;
-    }
-    .continer__box__img2{
-        top: 30px;
-        left: 50px;
-        width: 60px;
-    }
-    .btn1{
-        font-size: 25px;
-    }
-    .btn2{
-        font-size: 25px;
-    }
- }
-
-
-
- @media (min-width: 1400px) {
-    body{
-        background-repeat: no-repeat;
-        background-position: 50% -40%;
-        background-size: 100vw;
-        height: 100vh;
-        width: 100%;
-    }
-    
-    .continer{
-        width: 23vw;
-        height: 80vh;
-        
-    }
-    .continer__img{
-        width: 23vw;
-        height: 25vh;
-    }
-    
-    .continer__Title{
-        padding: 30px 0 20px 0;
-    }
-    
-    .continer__destription{
-        margin: 0 45px;
-        font-size: 16px;
-    }
-    .continer__box{
-        height: 10vh;
-        width: 80%;
-        left: 10%;
-        margin: 30px 0; 
-    }
-    .continer__box__offer{
-        top: 25%;
-        left: 25%;
-        font-size: 16px;
-    }
-    
-    .continer__box__price{
-        top: 45%;
-        left: 25%;
-        font-size: 16px;
-    }
-    .continer__box__img2{
-        top: 18px;
-        left: 15px;
-    }
-    .continer__box__price{
-        position: absolute;
-    }
-    .change{
-        top: 35%;
-        left: 75%;
-        font-size: 18px;
-    }
-    
-    .buttons{
-        left: 8%;
-        width: 85%;
-        margin: 50px 0;
-        
-        
-    }
-    
-    .btn1{
-        margin: 0 0 20px 0;
-        padding: 20px 0;
-        font-size: 18px;
-    }
-    .btn2{
-        margin: 0 0 15px 0;
-        font-size: 20px;
-        padding: 15px;
-    }
-    .continer__footer{
-        width: 100%;
-        height: 5px;
-        position:absolute;
-        top: 98%;
-     }
-     footer {
-        font-size: 11px; 
-        text-align: center;
-    }
-    footer a{
-        color: hsl(228, 45%, 44%);
-    }
- }
